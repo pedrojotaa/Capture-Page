@@ -4,50 +4,51 @@
 }
 
 body{
+  font-family: Arial, Helvetica, sans-serif;
   background-color: black;
 }
 
-.title{
+.container{
   max-width: 1000px;
   margin: auto;
+}
+
+header{
   background-color: purple;
   color: white;
   text-align: center;
   padding: 5px;
 }
 
-section{
-  background-image: url('../img/palestra.jpg');
-  background-repeat: no-repeat;
-  max-width: 1000px;
-  margin: auto;
-  width: 768px;
-  height: 512px;
+.title{
+  font-size: 26px;
 }
 
-.container{
-  width: 250px;
+section{
+  background-image: url('../img/palestra.jpg');
+  padding: 20px;
+  overflow: hidden;
+}
+
+.formContainer{
+  max-width: 250px;
   background-color: #ffffff70;
   float: right;
   padding: 10px;
-  margin-top: 20px;
   border-radius: 5px;
-}
-
-.container h2, .container p{
   color: white;
 }
 
 .mb{
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
-input, select{
+input, select, button{
   display: block;
   width: 100%;
   box-sizing: border-box;
   padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -56,11 +57,14 @@ input, select{
   border-radius: 5px;
 }
 
+select{
+  background-image: url('../img/arrow.jpg');
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center;
+  cursor: pointer;
+}
+
 button{
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
   background-color: purple;
   color: white;
   font-weight: bold;
@@ -70,15 +74,22 @@ button{
 
 footer{
   background-color: #cccccc;
-  max-width: 1000px;
-  margin: auto;
-  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+  
 }
 
-footer img{
-  float: left;
+.picture{
+  max-width: 200px;
 }
 
-footer p{
-  width: 300px;
+.description{
+  display: inline-block;
+  max-width: 30%;
+  margin-left: 30px;
+  text-align: left;
+}
+
+.description h2, .description p{
+  margin-bottom: 10px;
 }
